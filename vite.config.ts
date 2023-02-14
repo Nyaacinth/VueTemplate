@@ -1,4 +1,5 @@
 import Vue from "@vitejs/plugin-vue"
+import UnoCSS from "unocss/vite"
 import AutoImport from "unplugin-auto-import/vite"
 import Checker from "vite-plugin-checker"
 
@@ -16,6 +17,7 @@ export default defineConfig({
     },
     plugins: [
         Vue(),
+        UnoCSS(),
         AutoImport({
             imports: ["vue"],
             dts: "./types/auto-imports.d.ts"
