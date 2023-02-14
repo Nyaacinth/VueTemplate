@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "vue.volar",
+        "vue.vscode-typescript-vue-plugin",
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "aaron-bond.better-comments",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "tauri-apps.tauri-vscode",
+        "antfu.unocss"
+    ]
+}
