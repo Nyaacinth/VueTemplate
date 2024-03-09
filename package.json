@@ -1,0 +1,30 @@
+{
+    "name": "template-name-please-replace",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "serve-frontend-dev": "vite",
+        "build-frontend": "vue-tsc && eslint . && vite build",
+        "launch-app-dev": "tauri dev",
+        "build-app": "tauri build"
+    },
+    "dependencies": {
+        "@tauri-apps/api": "^1.5.3",
+        "vue": "^3.4.21",
+        "vue-router": "^4.3.0"
+    },
+    "devDependencies": {
+        "@tauri-apps/cli": "^1.5.11",
+        "@types/eslint": "^8.56.5",
+        "@typescript-eslint/eslint-plugin": "^7.1.1",
+        "@typescript-eslint/parser": "^7.1.1",
+        "@vitejs/plugin-vue": "^5.0.4",
+        "eslint": "^8.57.0",
+        "eslint-plugin-vue": "^9.22.0",
+        "prettier": "^3.2.5",
+        "typescript": "~5.4.2",
+        "vite": "^5.1.5",
+        "vue-tsc": "^2.0.6"
+    }
+}

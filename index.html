@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="module" src="./app/main.ts"></script>
+        <title>template-name-please-replace</title>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+    <style>
+        /* Disable bounces and overscroll behaviors, also expands #root */
+        html {
+            overscroll-behavior: none;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        body {
+            overflow: auto;
+            height: 100%;
+        }
+        #root {
+            height: 100%;
+        }
+
+        /* Disable text selection and I-beam for normal ui, except editable elements */
+        html {
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
+        input,
+        textarea,
+        select,
+        [contenteditable] {
+            -webkit-user-select: text;
+            user-select: text;
+            cursor: text;
+        }
+    </style>
+</html>
