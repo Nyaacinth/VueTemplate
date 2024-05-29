@@ -5,3 +5,7 @@
 <template>
     <RouterView />
 </template>
+
+<style>
+    @import "@unocss/reset/tailwind-compat.css";
+</style>
