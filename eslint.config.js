@@ -29,7 +29,6 @@ export default [
             "@typescript-eslint/prefer-as-const": "warn",
             "@typescript-eslint/prefer-namespace-keyword": "warn",
             "@typescript-eslint/ban-types": "warn",
-            "vue/comment-directive": "error",
             "vue/multi-word-component-names": "error",
             "vue/no-arrow-functions-in-watch": "error",
             "vue/no-async-in-computed-properties": "error",
