@@ -10,30 +10,38 @@
         <div id="root"></div>
     </body>
     <style>
-        /* Disable bounces and overscroll behaviors, also expands #root */
+        /** @see https://github.com/Nyaacinth/webview-nativefy.css/raw/main/webview-nativefy.css */
+
+        /* Disable bounces and overscroll effects, also expands body */
         html {
             overscroll-behavior: none;
             overflow: hidden;
-            height: 100vh;
             width: 100vw;
+            height: 100vh;
+        }
+        @supports (height: 100dvh) and (width: 100dvw) {
+            html {
+                width: 100dvw;
+                height: 100dvh;
+            }
         }
         body {
             overflow: auto;
+            width: 100%;
             height: 100%;
         }
         #root {
             height: 100%;
         }
 
-        /* Disable text selection and I-beam for normal ui, except editable elements */
+        /* Disable text selection and I-beam on elements except editable ones */
         html {
             -webkit-user-select: none;
             user-select: none;
             cursor: default;
         }
-        input,
+        input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
         textarea,
-        select,
         [contenteditable] {
             -webkit-user-select: text;
             user-select: text;
